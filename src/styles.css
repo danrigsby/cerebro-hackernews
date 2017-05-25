@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  align-self: flex-start;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  padding: 5px;
+  height: auto;
+}
+
+.timeago {
+  font-size: 10px;
+  line-height: 18px;
+  margin-right: 10px
+}
+.chip {
+  display: inline-block;
+  height: 20px;
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 600;
+  color: rgba(0,0,0,0.6);
+  padding: 0 6px;
+  border-radius: 10px;
+  background-color: #e4e4e4;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  min-width: 35px;
+}
+
+.chip-icon {
+  float: left;
+  margin: 1px 3px 2px -2px;
+  height: 16px;
+  width: 16px;
+}

@@ -1,0 +1,53 @@
+{
+  "name": "cerebro-hackernews",
+  "version": "1.0.0",
+  "description": "Cerebro plugin for Hacker News",
+  "license": "MIT",
+  "repository": "danrigsby/cerebro-hackernews",
+  "author": {
+    "name": "Dan Rigsby",
+    "email": "danrigsby@gmail.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "build": "webpack && babili dist -d dist --compact --no-comments",
+    "debug": "./scripts/debug",
+    "debug:windows": "scripts\\debug.bat",
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
+    "prepublish": "rimraf ./dist && npm run build"
+  },
+  "main": "dist/index.js",
+  "keywords": [
+    "cerebro",
+    "cerebro-plugin",
+    "hackernews"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babili": "0.0.9",
+    "chai": "^3.5.0",
+    "css-loader": "^0.26.0",
+    "mocha": "^3.3.0",
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "2.1.0-beta.27"
+  },
+  "dependencies": {
+    "cerebro-tools": "^0.1.8",
+    "cerebro-ui": "^0.0.15",
+    "mocha-circleci-reporter": "^0.0.2",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "whatwg-fetch": "^2.0.3"
+  }
+}

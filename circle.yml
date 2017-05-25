@@ -1,0 +1,21 @@
+machine:
+  node:
+    version: 7
+
+dependencies:
+  pre:
+    - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+    - yarn
+  override:
+    - yarn run build
+
+test:
+  override:
+    - yarn test -- --reporter mocha-circleci-reporter
+    - if [[ -e test-results.xml ]]; then cp test-results.xml $CIRCLE_TEST_REPORTS/test-results.xml; fi
+
+deployment:
+  npm:
+    tag: /v[0-9]+(\.[0-9]+)*/
+    commands:
+      - npm publish
