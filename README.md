@@ -5,6 +5,8 @@
 ## Usage
 In Cerebro, type `hn` or `hackernews`, then select "HackerNews" to see the list of popular stories. 
 
+![](screenshot.png)
+
 <kbd>Enter</kbd> opens the article in a web browser
 
 ## Related
