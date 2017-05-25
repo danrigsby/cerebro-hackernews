@@ -15,8 +15,7 @@
     "build": "webpack && babili dist -d dist --compact --no-comments",
     "debug": "./scripts/debug",
     "debug:windows": "scripts\\debug.bat",
-    "test": "echo no tests",
-    "prepublish": "rimraf ./dist && npm run build"
+    "test": "echo no tests"
   },
   "main": "dist/index.js",
   "keywords": [
