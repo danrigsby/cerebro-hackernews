@@ -20,13 +20,9 @@ class ContainerView extends React.Component {
 
   render() {
     return (
-      <div>
-        {
-          this.state.loading
-            ? <Loading />
-            : <Stories stories={this.state.stories} openUrl={this.props.openUrl} />
-        }
-      </div>
+      this.state.loading
+        ? <Loading />
+        : <Stories stories={this.state.stories} openUrl={this.props.openUrl} />
     );
   }
 }

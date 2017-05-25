@@ -1,6 +1,6 @@
 .wrapper {
-  display: flex;
   align-self: flex-start;
+  flex-direction: column;
 }
 
 .list {
