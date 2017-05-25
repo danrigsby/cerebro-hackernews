@@ -1,6 +1,6 @@
 {
   "name": "cerebro-hackernews",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cerebro plugin for Hacker News",
   "license": "MIT",
   "repository": "danrigsby/cerebro-hackernews",
