@@ -13,6 +13,11 @@
   height: auto;
 }
 
+.count {
+  padding-right: 5px;
+  min-width: 25px;
+}
+
 .timeago {
   font-size: 10px;
   line-height: 18px;
